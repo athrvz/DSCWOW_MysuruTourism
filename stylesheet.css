@@ -18,6 +18,10 @@ body{
 	background-size: cover;
 }
 
+section{
+	padding: 6rem 0;
+}
+
 a{
 	text-decoration: none;
 	color: #eee;
@@ -65,8 +69,8 @@ li{
 }
 
 .nav-link{
-	font-family: 'Comic Sans MS', sans-serif;
-	font-size: 3rem;
+	font-family: 'Fugaz One', cursive;
+	font-size: 4rem;
 	padding: 1rem;
 }
 
@@ -141,8 +145,8 @@ li{
 }
 
 .landing-text h1{
-	font-size: 6rem;
-	font-family: 'Comic Sans MS', sans-serif;
+	font-size: 7.5rem;
+	font-family: 'Fugaz One', cursive;
 	background: linear-gradient(to top, #ffe838, #fd57bf);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color:transparent;
@@ -151,33 +155,255 @@ li{
 }
 
 .landing-text h6{
-	font-family: 'Comic Sans MS', sans-serif;
-	font-size: 2rem;
+	font-family: 'Fugaz One', cursive;
+	font-size: 3.3rem;
 	font-weight: 300;
+	color: #d8d8d8;
 }
 
-/*ABOUT*/
-.about .container{
-	font-family: 'Comic Sans MS', sans-serif;
-	display: flex;
-	order: 3;
-	align-items: center;
-	justify-content: center;
-}
 
-.about-heading{
+
+/*Styling the gallery*/
+.gallery h1, h4{
+	font-family: 'Fugaz One', cursive;
 	text-align: center;
-	text-transform: uppercase;
-	line-height: 0;
-	margin-bottom: 6rem;
+	padding: 1rem;
+}
+.gallery h1{
+	margin-top: 1rem;
+	font-size: 6rem;
+	background: linear-gradient(to top, #ffe838, #fd57bf);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color:transparent;
+	padding: 1rem;
+	user-select: none;
+}
+.gallery h4{
+	font-size: 2.2rem;
+	color: #d8d8d8;
 }
 
-.aobut-heading h1{
-	font-size: 10rem;
-	opacity: .3;
+/*features*/
+.features{
+	padding: 100px 0;
 }
 
-.about-heading h6{
+.features h1{
+	font-family: 'Fugaz One', cursive;
+	font-size: 5rem;
+	text-align: center;
+	padding: 30px;
+	background: linear-gradient(to top, #ffe838, #fd57bf);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color:transparent;
+	padding: 1rem;
+	user-select: none;
+}
+
+.feature-img img{
+	width: 100%;
+}
+
+.price{
+	width: 50px;
+	height: 50px;
+	background: #ff5722;
+	color: #fff;
+	font-weight: 600;
+	border-radius: 50%;
+	padding: 10px;
+	box-shadow: 0 0 10px 1px rgba(37, 73, 214, .18);
+	position: absolute;
+	left: 28px;
+	bottom: -25px;
+}
+.feature-img{
+	position: relative;
+}
+
+.rating{
+	padding: 3px;
+	float: right;
+	background: #fff;
+	bottom: -1px;
+	right: 0;
+	position: absolute;
+}
+.features .fa{
+	font-size: 12px;
+	color: #ff5722;
+}
+
+.feature-deatails{
+	padding: 20px;
+	text-align: justify;
+}
+.feature-deatails h4{
+	font-weight: 500;
+	margin-top: 20px;
+}
+
+.feature-deatails .fa{
+	margin-right: 5px;
+}
+
+/*Shopping*/
+.shopping h1, h4{
+	font-family: 'Fugaz One', cursive;
+	text-align: center;
+	padding: 1rem;
+}
+.shopping h1{
+	margin-top: 1rem;
+	font-size: 6rem;
+	background: linear-gradient(to top, #ffe838, #fd57bf);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color:transparent;
+	padding: 1rem;
+	user-select: none;
+}
+.shopping h4{
+	font-size: 2.2rem;
+	color: #d8d8d8;
+}
+
+/*Feedback*/
+.user-feedback{
+	padding: 100px 0;
+}
+.user-feedback h1, h5{
+	font-family: 'Fugaz One', cursive;
+	text-align: center;
+	padding: 1rem;
+}
+.user-feedback h5{
+	font-size: 2.3rem;
+	padding-bottom: 1.5rem;
+}
+
+.user-feedback h1{
+	margin-top: 1rem;
+	font-size: 5rem;
+	background: linear-gradient(to top, #ffe838, #fd57bf);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color:transparent;
+	padding: 1rem;
+	user-select: none;
+}
+
+.user-review{
+	text-align: center;
+	border: 20px;
+	box-shadow: 0 0 10px 0 #ffe838;
+	color: #d8d8d8;
+}
+.user2{
+	box-shadow: 0 0 10px 0 #fd57bf;
+}
+
+.zoom {
+  transition: transform .2s;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.05); /* IE 9 */
+  -webkit-transform: scale(1.05); /* Safari 3-8 */
+  transform: scale(1.05); 
+}
+.user-review p{
+	padding: 50px 10px 10px 10px;
+}
+.user-feedback img{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	position: relative;
+	margin: -30px 0 20px 40%;
+}
+.user-review::before{
+	content: '\201d';
+	display: block;
+	position: absolute;
+	font-size: 100px;
+	color: #ffe838;
+	font-family: 'Fugaz One', cursive;
+	left: 44%;
+	top: -20px;
+}
+.user2::before{
+	color: #fd57bf;
+}
+
+/*Footer*/
+.footer{
+	padding: 100px 0;
+	background-image: linear-gradient(#0f0c29, #302b63);
+	color: -20px;
+	color: white;
+}
+
+.footer-logo{
+	width: 100px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#watermark{
+	font-family: 'Fugaz One', cursive;
+	text-align: center;
+	color: #d8d8d8;
+}
+.footer h4{
 	font-size: 2rem;
-	font-weight: 300;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 25px;
+	color: #d8d8d8;
+}
+.footer p{
+	font-size: 12px;
+	text-align: justify;
+	padding-right: 20px;
+	text-align: center;
+	color: #d8d8d8;
+}
+
+.footer .row .fa .fab{
+	padding-right: 20px;
+	font-size: 15px;
+}
+
+.copyright{
+	font-family: 'Fugaz One', cursive;
+	width: 100%;
+	text-align: center;
+	background-color: #16162d;
+	padding: 2rem 0;
+	position: relative;
+	user-select: none;
+}
+
+.copyright:hover{
+	background: linear-gradient(to top, #ffe838, #fd57bf);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color:transparent;
+}
+
+
+
+@media screen and (max-width: 768px){
+	body{
+		background: url("img/back.jfif") no-repeat center fixed;
+		background-size: cover;
+	}
+	.nav-list{
+		flex-direction: column;
+	}
+	li{
+		margin: 2rem 0;
+	}
+	.nav-link{
+		font-size: 4.5rem;
+	}
 }
