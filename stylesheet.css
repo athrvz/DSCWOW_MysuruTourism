@@ -6,6 +6,7 @@
 }
 
 html{
+	scroll-behavior: smooth;
 	font-size: 10px;
 	font-family: 'Roboto', sans-serif;
 	color: #eee;
@@ -182,6 +183,9 @@ li{
 	font-size: 2.2rem;
 	color: #d8d8d8;
 }
+.gallery h5{
+	font-size: 2rem;
+}
 
 /*features*/
 .features{
@@ -235,6 +239,7 @@ li{
 }
 
 .feature-deatails{
+	color: white;
 	padding: 20px;
 	text-align: justify;
 }
@@ -246,6 +251,46 @@ li{
 .feature-deatails .fa{
 	margin-right: 5px;
 }
+
+.modal-body{
+	font-family: 'Comic Sans MT', cursive;
+	color: black;
+	overflow: auto;
+}
+
+.modal-title{
+	color: black;
+	font-size: 2rem;
+}
+
+/*Map*/
+.box h3{
+	font-family: 'Fugaz One', cursive;
+	font-size: 2rem;
+	color: #fd57bf;
+}
+/*
+#map{
+	padding: 100px 0;
+	font-family: 'Fugaz One', cursive;
+	text-align: justify;
+	padding: 1rem;
+
+}*/
+
+#map h1{
+	font-family: 'Fugaz One', cursive;
+	text-align: center;
+	padding: 1rem;
+	margin-top: 1rem;
+	font-size: 6rem;
+	background: linear-gradient(to top, #ffe838, #fd57bf);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color:transparent;
+	padding: 1rem;
+	user-select: none;
+}
+
 
 /*Shopping*/
 .shopping h1, h4{
@@ -265,6 +310,15 @@ li{
 .shopping h4{
 	font-size: 2.2rem;
 	color: #d8d8d8;
+}
+.card-title{
+	font-size: 2.5rem;
+}
+
+.card-text{
+	text-decoration: bold;
+	font-weight: 400;
+	color: black;
 }
 
 /*Feedback*/
